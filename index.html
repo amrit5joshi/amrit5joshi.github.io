@@ -1,11 +1,181 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Amrit</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio Website" />
+    <meta name="author" content="Amrit Joshi" />
+    <meta name="keywords"
+          content="Amrit Joshi, Joshi Amrit, Er. Amrit Joshi,
+        Amrit Joshi Programmer, Amrit Joshi Nepal, Amrit Joshi NIT, Amrit Joshi Website, Amrit Joshi software, Amrit Joshi Allahabad" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <title>Amrit Joshi</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
+
 <body>
-    amrit
+    <div id="particles-js">
+        <div class="header">
+            <h1>
+                <span id = "name" class="site-title">Amrit Joshi</span>
+                <span class="site-description">Programmer • Web Developer • An Optimist</span>
+            </h1>
+            <div class="header-icons">
+                <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/amritjoshi">
+                    <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a aria-label="My Github Profile" target="_blank" href="https://github.com/amrit5joshi">
+                    <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+                </a>
+                <!-- <a aria-label="My Résumé" target="_blank" href="#">
+                    <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a> -->
+                <a aria-label="Send Email" href="mailto:amrit5joshi@gmail.com" target="_blank">
+                    <i class="icon fa fa-envelope"></i>
+                </a>
+            </div>
+            <div class="header-links">
+                <a class="link" href="#about" data-scroll>About Me</a>
+                <a class="link" href="#projects" data-scroll>Projects</a>
+            </div>
+        </div>
+        <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+
+    <section id="about">
+        <div class="user-details">
+            <h1>About Me</h1>
+            <picture>
+                <source type="image/webp"
+                        srcset="./assets/img/webp/amritjoshi.webp"
+                        alt="Amrit Joshi"
+                        width="40%"
+                        style="border-radius: 50%" />
+                <img src="./assets/img/jpg/amritjoshi.jpg"
+                     alt="Amrit Joshi"
+                     width="40%"
+                     style="border-radius: 50%" />
+            </picture>
+            <p>
+                I am a <strong>Computer Science Engineer</strong> and currently I am exploring the field of software engineering; design, develop,
+                maintain, test, and evaluate computer software. I have completed my undergraduate in computer science and engineering from 
+            <strong>NIT, Allahabad</strong>. During my undergraduate studies, I was introduced to a range of newer subjects such as data structures, algorithms,
+                a range of programming languages and the process of application development. The more I learned about these subjects, the more I 
+                became fascinated about the same. Currently I am working as a <strong>software developer</strong> using up the latest tech stack which I have mentioned below😉.
+                I am open to opportunities for the same.              
+            </p>
+        </div>
+
+        <div class="user">
+            <div class="tech">
+                <h2>Languages</h2>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-java-plain-wordmark colored"></i>
+                <i class="devicon-csharp-plain colored"></i>
+                <i class="devicon-c-plain colored"></i>
+                <i class="devicon-cplusplus-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+            </div>
+
+            <div class="tech">
+                <h2>Front-End</h2>
+                <i class="devicon-react-original colored"></i>
+                <i class="devicon-dot-net-plain colored"></i>
+                <i class="devicon-sass-plain colored"></i>
+                <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+            </div>
+
+            <div class="tech">
+                <h2>Back-End</h2>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-dot-net-plain colored"></i>
+                <i class="devicon-nodejs-plain colored"></i>
+                <i class="devicon-express-original-wordmark colored"></i>
+                <i class="devicon-mysql-plain colored"></i>
+                <i class="devicon-postgresql-plain-wordmark colored"></i>
+            </div>
+
+            <div class="tech">
+                <h2>Tools</h2>
+                <i class="devicon-dot-net-plain colored"></i>
+                <i class="devicon-visualstudio-plain colored"></i>
+                <i class="devicon-git-plain-wordmark colored"></i>
+                <i class="devicon-vscode-plain colored"></i>
+                <i class="devicon-github-original colored"></i>
+                <i class="devicon-docker-plain-wordmark colored"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="user-details">
+            <h1>Featured Projects</h1>
+        </div>
+
+        <div class="user-projects">
+            <div class="images-right">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/ClientServerChat.webp" alt="Client Server Chat" />
+                    <img alt="Client Server Chat" src="./assets/img/jpg/ClientServerChat.jpg" />
+                </picture>
+            </div>
+            <div class="contents" style="text-align: center">
+                <h3>Client Server Chat</h3>
+                <div>
+                    <img height="50"
+                         width="50"
+                         src="https://unpkg.com/simple-icons@3.4.0/icons/java.svg"
+                         style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)" />
+                    &nbsp;
+                    <img height="50" width="50" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+                </div>
+                <p>
+                    I developed this multi-feature chat application which allows text, image, audio, video, and all other types data sharing between two or more clients.
+                </p>
+                <a class="project-link" target="_blank" href="https://github.com/amrit5joshi/CLIENT_SERVER_CHAT">Check it out!</a>
+            </div>
+        </div>
+
+        <div class="user-projects">
+            <div class="images-left">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/MnnitAsks.webp" alt="MnnitAsks" />
+                    <img alt="MnnitAsks" src="./assets/img/jpg/MnnitAsks.jpg" />
+                </picture>
+            </div>
+            <div class="contents-right" style="text-align: center">
+                <h3>MnnitAsks</h3>
+                <img height="50"
+                     width="50"
+                     src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg"
+                     style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)" />
+                &nbsp;
+                <img height="50"
+                     width="50"
+                     src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
+                     style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)" />
+                &nbsp;
+                <img height="50" width="50" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+                <p style="text-align: justify">
+                    I created this website with one of my friends, Rajan Jha. It was a question and answer website with all the basic functionality to ask, answer, upvote, downvote, bookmark questions and answer. The project got third position in Webster 2018 in Avishkar, the annual techno-management fest of MNNIT, ALLAHABAD.
+                </p>
+                <a class="project-link" target="_blank" href="https://github.com/amrit5joshi/MnnitAsks">Check it out!</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Amrit Joshi, 2022</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <script src="./assets/js/google-analytics.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
