@@ -14,14 +14,15 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
 </head>
 
 <body>
     <div id="particles-js">
         <div class="header">
             <h1>
-                <span id = "name" class="site-title">Amrit Joshi</span>
-                <span class="site-description">Programmer • Web Developer • An Optimist</span>
+                <span id = "name" class="site-title tlt"  data-in-effect="fadeInLeft">Amrit Joshi</span>
+                <span class="site-description tlt-word" data-in-effect="fadeInLeft">Programmer • Web Developer • An Optimist</span>
             </h1>
             <div class="header-icons">
                 <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/amritjoshi">
@@ -38,8 +39,13 @@
                 </a>
             </div>
             <div class="header-links">
-                <a class="link" href="#about" data-scroll>About Me</a>
-                <a class="link" href="#projects" data-scroll>Projects</a>
+                <button class="btn-1">
+                    <a class="link" href="#about" data-scroll>About Me</a>
+                </button>
+                <div class="spacer"></div>
+                <button class="btn-1">
+                    <a class="link" href="#projects" data-scroll>Projects</a>
+                </button>
             </div>
         </div>
         <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -173,9 +179,33 @@
         <p>&copy; Amrit Joshi, 2022</p>
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./assets/js/sweet-scroll.min.js"></script>
-    <script src="./assets/js/google-analytics.js"></script>
+    <script src="./assets/js/google-analytics.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/jquery.lettering.js"></script>
+    <script src="./assets/js/jquery.texillate.js"></script>
+    <script>
+        $(document).ready( function () {
+            $(function () {
+                $('.tlt').textillate({
+                    in: {
+                        delay: 100
+                    }
+                });
+
+                $('.tlt-word').textillate({
+                    initialDelay: 1000,
+                    in: {
+                        delay: 400
+                    },
+                    type: 'word'                    
+                });
+            });
+        });
+    </script>
 </body>
 </html>

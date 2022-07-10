@@ -3475,15 +3475,10 @@ a img {
 }
 
 .down .icon {
-    position: absolute;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    top: 50%;
-    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
     fill: #fff;
     -webkit-animation: pulse 1.3s infinite;
     animation: pulse 1.3s infinite
@@ -3652,4 +3647,19 @@ a img {
     text-decoration: none;
     margin: 0;
     color: #fff
+}
+
+.btn-1 {
+    background: transparent;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.btn-1:hover {
+    background: #5347a8;
+}
+
+.spacer {
+    display: inline;
+    margin: 0px 5px 0px 5px;
 }
