@@ -3543,12 +3543,6 @@ a img {
     margin: 0 auto
 }
 
-@media only screen and (min-width:550px) {
-    #projects {
-        width: 80%
-    }
-}
-
 .user-projects {
     margin: 20px auto
 }
@@ -3662,4 +3656,45 @@ a img {
 .spacer {
     display: inline;
     margin: 0px 5px 0px 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#feature-text {
+ margin-left: 8px;
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 40px;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
+  
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+
+@media only screen and (min-width:550px) {
+    #projects {
+        width: 80%
+    }
+
+    .input-cursor{
+        height: 80px;
+    }
 }

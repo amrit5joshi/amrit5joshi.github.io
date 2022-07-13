@@ -21,7 +21,10 @@
     <div id="particles-js">
         <div class="header">
             <h1>
-                <span id = "name" class="site-title tlt"  data-in-effect="fadeInLeft">Amrit Joshi</span>
+                <div class="typing-container">
+                <span id = "feature-text" class="site-title tlt" ></span>
+                <span class="input-cursor"></span>
+                </div>
                 <span class="site-description tlt-word" data-in-effect="fadeInLeft">Programmer • Web Developer • An Optimist</span>
             </h1>
             <div class="header-icons">
@@ -58,11 +61,11 @@
                 <source type="image/webp"
                         srcset="./assets/img/webp/amritjoshi.webp"
                         alt="Amrit Joshi"
-                        width="40%"
+                        width="30%"
                         style="border-radius: 50%" />
                 <img src="./assets/img/jpg/amritjoshi.jpg"
                      alt="Amrit Joshi"
-                     width="40%"
+                     width="30%"
                      style="border-radius: 50%" />
             </picture>
             <p>
@@ -188,22 +191,15 @@
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/jquery.lettering.js"></script>
     <script src="./assets/js/jquery.texillate.js"></script>
+    <script src="./assets/js/customScript.js"></script>
     <script>
         $(document).ready( function () {
-            $(function () {
-                $('.tlt').textillate({
-                    in: {
-                        delay: 100
-                    }
-                });
-
-                $('.tlt-word').textillate({
-                    initialDelay: 1000,
-                    in: {
-                        delay: 400
-                    },
-                    type: 'word'                    
-                });
+          $('.tlt-word').textillate({
+                initialDelay: 1400,
+                in: {
+                    delay: 400
+                },
+                type: 'word'                    
             });
         });
     </script>
