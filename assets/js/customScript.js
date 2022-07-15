@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(){
-    typeSentence("Amrit Joshi","#feature-text");
+    typeSentence("Er. Amrit Joshi","#feature-text");
 
     async function typeSentence(sentence, eleRef, delay = 200) {
         const letters = sentence.split("");
